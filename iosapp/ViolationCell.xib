@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ViolationCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViolationCell" rowHeight="120" id="KGk-i7-Jjw" customClass="ViolationCell" customModule="iosapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Violation Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3g-wG-EdM">
+                        <rect key="frame" x="127" y="19" width="120" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Usi-AE-bjl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loC-nQ-YHh">
+                        <rect key="frame" x="129" y="45" width="97" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="97" id="ce4-lt-NvL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQg-Fk-0xl" userLabel="Timed">
+                        <rect key="frame" x="129" y="71" width="97" height="14.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="97" id="XLg-yM-Net"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge4-hh-cXb">
+                        <rect key="frame" x="377" y="45" width="65" height="30"/>
+                        <color key="backgroundColor" red="0.10272519426645033" green="0.10703342737037069" blue="0.5" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="65" id="DFK-NI-bxJ"/>
+                            <constraint firstAttribute="height" constant="30" id="rzu-JO-SK7"/>
+                        </constraints>
+                        <state key="normal" title="Contest">
+                            <color key="titleColor" red="0.98675413847978266" green="0.98703168393061647" blue="1" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                        <connections>
+                            <action selector="ContestClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5tZ-Ku-T6n"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status: Uncontested" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9h7-vz-atj">
+                        <rect key="frame" x="285" y="89" width="157" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="157" id="Nf3-qe-2vX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Violation" translatesAutoresizingMaskIntoConstraints="NO" id="nf0-Gy-Mbc">
+                        <rect key="frame" x="20" y="15" width="99" height="95"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="95" id="a0G-DF-9UC"/>
+                            <constraint firstAttribute="width" constant="99" id="aEb-y6-uzX"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9h7-vz-atj" secondAttribute="bottom" constant="10" id="5b2-2M-J9C"/>
+                    <constraint firstItem="U3g-wG-EdM" firstAttribute="leading" secondItem="nf0-Gy-Mbc" secondAttribute="trailing" constant="8" id="At0-xx-4j3"/>
+                    <constraint firstItem="loC-nQ-YHh" firstAttribute="top" secondItem="U3g-wG-EdM" secondAttribute="bottom" constant="8" id="CzK-bc-EOS"/>
+                    <constraint firstItem="Ge4-hh-cXb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Hxg-6b-XTN"/>
+                    <constraint firstItem="nf0-Gy-Mbc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Tob-79-oHU"/>
+                    <constraint firstItem="oQg-Fk-0xl" firstAttribute="top" secondItem="loC-nQ-YHh" secondAttribute="bottom" constant="11.5" id="YWb-FL-Yc0"/>
+                    <constraint firstItem="U3g-wG-EdM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="fo1-iu-KDc"/>
+                    <constraint firstAttribute="trailing" secondItem="9h7-vz-atj" secondAttribute="trailing" constant="20" id="hgw-RD-iRH"/>
+                    <constraint firstItem="oQg-Fk-0xl" firstAttribute="leading" secondItem="nf0-Gy-Mbc" secondAttribute="trailing" constant="10" id="its-fN-n2p"/>
+                    <constraint firstItem="nf0-Gy-Mbc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kQw-zx-pNe"/>
+                    <constraint firstAttribute="trailing" secondItem="Ge4-hh-cXb" secondAttribute="trailing" constant="20" id="s16-k7-IbG"/>
+                    <constraint firstItem="loC-nQ-YHh" firstAttribute="leading" secondItem="nf0-Gy-Mbc" secondAttribute="trailing" constant="10" id="xWF-3a-6bB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="ViolationCell" label="ViolationCell"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ContestButton" destination="Ge4-hh-cXb" id="JQg-S7-fF4"/>
+                <outlet property="ContestedLabel" destination="9h7-vz-atj" id="ZNm-KJ-lbN"/>
+                <outlet property="Date" destination="loC-nQ-YHh" id="czK-Iq-7pU"/>
+                <outlet property="Timed" destination="oQg-Fk-0xl" id="bmJ-Nx-kMV"/>
+                <outlet property="ViolationImage" destination="nf0-Gy-Mbc" id="QSA-Pa-aCh"/>
+                <outlet property="ViolationType" destination="U3g-wG-EdM" id="RmU-zx-pVR"/>
+            </connections>
+            <point key="canvasLocation" x="-346.37681159420293" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Violation" width="224" height="224"/>
+    </resources>
+</document>
